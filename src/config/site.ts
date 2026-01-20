@@ -24,14 +24,11 @@ export const MAIN_NAV: NavItem[] = [
         href: "/projects",
     },
     {
-        title: "blog",
-        href: "/blog",
-    }, {
         title: "contact",
         href: "/contact",
     },
 ];
 
 export const GITHUB_USERNAME = "Alkush-Pipania";
-export const SOURCE_CODE_GITHUB_REPO = "Alkush-Pipania/portfolio-template";
+export const SOURCE_CODE_GITHUB_REPO = "Alkush-Pipania/alkush-portfolio-template";
 export const SOURCE_CODE_GITHUB_URL = "https://github.com/Alkush-Pipania/alkush-portfolio-template";

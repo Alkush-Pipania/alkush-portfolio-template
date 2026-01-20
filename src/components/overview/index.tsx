@@ -1,4 +1,5 @@
 import {
+  FileTextIcon,
   GlobeIcon,
   MapPinIcon,
   MarsIcon,
@@ -9,7 +10,6 @@ import {
 import { urlToName } from "@/utils/url";
 
 import { Panel, PanelContent } from "../panel";
-import { CurrentLocalTimeItem } from "./current-local-time-item";
 import { EmailItem } from "./email-item";
 import {
   IntroItem,
@@ -54,7 +54,21 @@ export function Overview() {
             </IntroItemContent>
           </IntroItem>
 
-          <CurrentLocalTimeItem timeZone={USER.timeZone} />
+          {USER.resume && (
+            <IntroItem>
+              <IntroItemIcon>
+                <FileTextIcon />
+              </IntroItemIcon>
+              <IntroItemContent>
+                <IntroItemLink
+                  href={USER.resume}
+                  aria-label="View Resume"
+                >
+                  Resume
+                </IntroItemLink>
+              </IntroItemContent>
+            </IntroItem>
+          )}
 
           {/* <PhoneItem phoneNumber={USER.phoneNumber} /> */}
 

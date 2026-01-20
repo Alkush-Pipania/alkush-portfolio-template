@@ -12,8 +12,10 @@ export type Project = {
     /** End date; leave undefined for "Present". */
     end?: string;
   };
-  /** Public URL (site, repository, demo, or video). */
-  link: string;
+  /** Public URL (site, demo, or video). Optional if only GitHub repo exists. */
+  link?: string;
+  /** Optional GitHub repository URL. */
+  github?: string;
   /** Tags/technologies for chips or filtering. */
   skills: string[];
   /** Optional rich description; Markdown and line breaks supported. */

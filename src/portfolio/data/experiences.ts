@@ -11,6 +11,7 @@ export const EXPERIENCES: Experience[] = [
         title: "Full Stack Developer",
         employmentPeriod: {
           start: "08.2024",
+          end: "01.2026",
         },
         employmentType: "Internship",
         icon: "code",

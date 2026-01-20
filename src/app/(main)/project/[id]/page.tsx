@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeftIcon, BoxIcon, InfinityIcon, LinkIcon } from "lucide-react";
+import { ArrowLeftIcon, BoxIcon, GithubIcon, InfinityIcon, LinkIcon } from "lucide-react";
 
 import { Markdown } from "@/components/markdown";
 import { Tag } from "@/components/ui/tag";
 import { Button } from "@/components/ui/button";
 import { ProseMono } from "@/components/ui/typography";
+import { ImageLightbox } from "@/components/image-lightbox";
 import { PROJECTS } from "@/portfolio/data/projects";
 import { cn } from "@/lib/utils";
 
@@ -73,9 +74,9 @@ export default async function ProjectDetailPage({ params }: Props) {
             {/* Header with back button and title */}
             <div className="flex items-center gap-3 border-x border-b border-edge px-4 py-6">
                 <Button asChild variant="ghost" size="icon" className="shrink-0">
-                    <Link href="/projects">
+                    <Link href="/">
                         <ArrowLeftIcon className="size-4" />
-                        <span className="sr-only">Back to Projects</span>
+                        <span className="sr-only">Back to Home</span>
                     </Link>
                 </Button>
                 <div className="flex items-center gap-3">
@@ -131,14 +132,20 @@ export default async function ProjectDetailPage({ params }: Props) {
                 <div className="overflow-hidden border-b border-edge md:border-b-0 md:border-r">
                     {project.media ? (
                         project.media.type === "image" ? (
-                            <Image
+                            <ImageLightbox
                                 src={project.media.url}
                                 alt={project.media.alt || project.title}
-                                width={400}
-                                height={300}
-                                className="h-full w-full object-cover"
-                                unoptimized
-                            />
+                                className="h-full w-full"
+                            >
+                                <Image
+                                    src={project.media.url}
+                                    alt={project.media.alt || project.title}
+                                    width={400}
+                                    height={300}
+                                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    unoptimized
+                                />
+                            </ImageLightbox>
                         ) : (
                             <video
                                 src={project.media.url}
@@ -160,15 +167,29 @@ export default async function ProjectDetailPage({ params }: Props) {
 
                 {/* Quick Info */}
                 <div className="flex flex-col justify-center gap-4 p-6">
-                    <a
-                        className="inline-flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors"
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <LinkIcon className="size-4" />
-                        <span>Visit Project</span>
-                    </a>
+                    {project.link && (
+                        <a
+                            className="inline-flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors"
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <LinkIcon className="size-4" />
+                            <span>Visit Project</span>
+                        </a>
+                    )}
+
+                    {project.github && (
+                        <a
+                            className="inline-flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors"
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <GithubIcon className="size-4" />
+                            <span>View on GitHub</span>
+                        </a>
+                    )}
 
                     {project.skills.length > 0 && (
                         <div>

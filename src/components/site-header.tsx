@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 
 import { DesktopNav } from "@/components/desktop-nav";
-import { NavItemGitHub } from "./nav-item-github";
 import { MAIN_NAV } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { SiteHeaderMark } from "./site-header-mark";
@@ -45,9 +44,7 @@ export function SiteHeader() {
 
         <DesktopNav items={MAIN_NAV} />
 
-        <div className="flex items-center *:first:mr-2">
-          <NavItemGitHub />
-          <span className="mx-2 flex h-4 w-px bg-border" />
+        <div className="flex items-center">
           <ThemeToggle />
           <MobileNav className="sm:hidden" items={MAIN_NAV} />
         </div>
