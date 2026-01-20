@@ -21,12 +21,12 @@ export const USER = {
   jobTitle: "Full Stack Developer",
   jobs: [
     {
-      title: "Full Stack Developer",
+      title: "Ex-Full Stack Developer",
       company: "TECHYWEB SOLUTIONS Inc.",
       website: "https://techyweb.com",
     },
     {
-      title: "Frontend Intern",
+      title: "Ex-Frontend Intern",
       company: "MAKUNAI GLOBAL TECHNOLOGIES",
       website: "https://makunai.com",
     },
@@ -43,8 +43,7 @@ export const USER = {
 - Pursuing **B.Tech in Computer Science** at Dr. A.P.J. Abdul Kalam Technical University.
 `,
   avatar: "https://stealth.blr1.digitaloceanspaces.com/assest/ChatGPT%20Image%20Dec%2023,%202025,%2010_45_13%20PM.png",
-  ogImage:
-    "https://assets.chanhdai.com/images/screenshot-og-image-light.png?t=1764345394",
+  ogImage: "/Images/og.png",
   namePronunciationUrl: "/audio/alkush.mp3",
   timeZone: "Asia/Kolkata",
   keywords: [

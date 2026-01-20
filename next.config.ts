@@ -7,10 +7,6 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "stealth.blr1.digitaloceanspaces.com",
       },
-      {
-        protocol: "https",
-        hostname: "assets.chanhdai.com",
-      },
     ],
   },
 };

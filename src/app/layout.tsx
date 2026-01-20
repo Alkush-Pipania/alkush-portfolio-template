@@ -90,11 +90,6 @@ export const metadata: Metadata = {
         type: "image/svg+xml",
       },
     ],
-    apple: {
-      url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
-      type: "image/png",
-      sizes: "180x180",
-    },
   },
 };
 
