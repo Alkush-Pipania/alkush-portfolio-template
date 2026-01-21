@@ -23,12 +23,12 @@ export const USER = {
     {
       title: "Ex-Full Stack Developer",
       company: "TECHYWEB SOLUTIONS Inc.",
-      website: "https://techyweb.com",
+      website: "https://webability.io",
     },
     {
       title: "Ex-Frontend Intern",
       company: "MAKUNAI GLOBAL TECHNOLOGIES",
-      website: "https://makunai.com",
+      website: "https://www.makunaiglobal.ai/",
     },
   ],
 
