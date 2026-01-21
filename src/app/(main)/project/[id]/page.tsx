@@ -74,7 +74,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             {/* Header with back button and title */}
             <div className="flex items-center gap-3 border-x border-b border-edge px-4 py-6">
                 <Button asChild variant="ghost" size="icon" className="shrink-0">
-                    <Link href="/">
+                    <Link href="/projects">
                         <ArrowLeftIcon className="size-4" />
                         <span className="sr-only">Back to Home</span>
                     </Link>

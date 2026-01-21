@@ -44,7 +44,7 @@ export const USER = {
 `,
   avatar: "https://stealth.blr1.digitaloceanspaces.com/assest/ChatGPT%20Image%20Dec%2023,%202025,%2010_45_13%20PM.png",
   ogImage: "/Images/og.png",
-  namePronunciationUrl: "/audio/alkush.mp3",
+  namePronunciationUrl: "/audio/name.mp3",
   timeZone: "Asia/Kolkata",
   keywords: [
     "alkush",
