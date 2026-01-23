@@ -1,6 +1,6 @@
 import {
   FileTextIcon,
-  GlobeIcon,
+  KeyRoundIcon,
   MapPinIcon,
   MarsIcon,
   NonBinaryIcon,
@@ -76,14 +76,14 @@ export function Overview() {
 
           <IntroItem>
             <IntroItemIcon>
-              <GlobeIcon />
+              <KeyRoundIcon />
             </IntroItemIcon>
             <IntroItemContent>
               <IntroItemLink
-                href={USER.website}
-                aria-label={`Personal website: ${urlToName(USER.website)}`}
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                aria-label="secret"
               >
-                {urlToName(USER.website)}
+                secret
               </IntroItemLink>
             </IntroItemContent>
           </IntroItem>
