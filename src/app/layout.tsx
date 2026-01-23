@@ -116,10 +116,16 @@ export default function RootLayout({
             __html: JSON.stringify(getWebSiteJsonLd()).replace(/</g, "\\u003c"),
           }}
         />
+
       </head>
       <body
         suppressHydrationWarning
       >
+        <Script
+          src="/api/script.js"
+          data-site-id="fa97c0b8c76f"
+          strategy="afterInteractive"
+        />
         <Providers>
           {children}
         </Providers>

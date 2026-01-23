@@ -1,3 +1,5 @@
+"use client";
+
 import {
   FileTextIcon,
   KeyRoundIcon,
@@ -21,6 +23,22 @@ import { JobItem } from "./job-item";
 import { PhoneItem } from "./phone-item";
 import { USER } from "@/portfolio/data/user";
 import { User } from "@/portfolio/types/user";
+
+declare global {
+  interface Window {
+    rybbit?: {
+      event: (eventName: string, properties?: Record<string, unknown>) => void;
+    };
+  }
+}
+
+function trackEvent(eventName: string, properties?: Record<string, unknown>) {
+  if (typeof window !== "undefined" && window.rybbit && typeof window.rybbit.event === "function") {
+    window.rybbit.event(eventName, properties);
+  } else {
+    console.warn("Rybbit tracking not available.");
+  }
+}
 
 export function Overview() {
   return (
@@ -63,6 +81,7 @@ export function Overview() {
                 <IntroItemLink
                   href={USER.resume}
                   aria-label="View Resume"
+                  onClick={() => trackEvent("resume_click", { source: "overview" })}
                 >
                   Resume
                 </IntroItemLink>
@@ -82,6 +101,7 @@ export function Overview() {
               <IntroItemLink
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 aria-label="secret"
+                onClick={() => trackEvent("secret_click", { source: "overview" })}
               >
                 secret
               </IntroItemLink>
