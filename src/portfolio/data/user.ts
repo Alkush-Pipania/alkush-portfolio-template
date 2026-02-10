@@ -54,5 +54,5 @@ export const USER = {
     "my code speak",
   ],
   dateCreated: "2025-12-23",
-  resume: "https://drive.google.com/file/d/1ab1Qq6_9oeTNcOfJp_F_ZS1r5vDVItf8/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1plDGDf56bXGGBDtAURisCuDvTCM1fmB9/view?usp=sharing",
 } satisfies User;
