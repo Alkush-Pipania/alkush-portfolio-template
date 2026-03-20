@@ -20,15 +20,15 @@ export const USER = {
   website: "https://alkush.xyz",
   jobTitle: "Full Stack Developer",
   jobs: [
+        {
+      title: "SDE Intern",
+      company: "TwoSpoon",
+      website: "https://twospoon.ai/",
+    },
     {
       title: "Ex-Full Stack Developer",
       company: "TECHYWEB SOLUTIONS Inc.",
       website: "https://www.techywebsolutions.com/",
-    },
-    {
-      title: "Ex-Frontend Intern",
-      company: "MAKUNAI GLOBAL TECHNOLOGIES",
-      website: "https://www.makunaiglobal.ai/",
     },
   ],
 
