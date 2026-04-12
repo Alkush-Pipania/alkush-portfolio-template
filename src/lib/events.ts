@@ -14,7 +14,7 @@ const eventSchema = z.object({
     .record(z.string(), z.union([z.string(), z.number(), z.boolean(), z.null()]))
     .optional(),
 });
-
+ 
 export type Event = z.infer<typeof eventSchema>;
 
 export function trackEvent(input: Event) {
