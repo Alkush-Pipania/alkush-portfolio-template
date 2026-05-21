@@ -24,7 +24,7 @@ function Separator({ className }: { className?: string }) {
 
 export default function ProjectsPage() {
     return (
-        <div className="mx-auto md:max-w-3xl *:[[id]]:scroll-mt-22">
+        <div className="mx-auto md:max-w-5xl *:[[id]]:scroll-mt-22">
             <Separator />
 
             {/* Page Header */}

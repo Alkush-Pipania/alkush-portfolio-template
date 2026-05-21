@@ -21,13 +21,13 @@ export default function Page() {
                 }}
             />
 
-            <div className="mx-auto md:max-w-3xl *:[[id]]:scroll-mt-22">
+            <div className="mx-auto md:max-w-5xl *:[[id]]:scroll-mt-22">
                 {/* <ProfileCover /> */}
                 <ProfileHeader />
                 <Separator />
 
                 <Overview />
-                <Separator />x
+                <Separator />
 
 
 

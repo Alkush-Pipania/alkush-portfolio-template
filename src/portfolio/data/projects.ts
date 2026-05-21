@@ -2,6 +2,29 @@ import type { Project } from "../types/projects";
 
 export const PROJECTS: Project[] = [
   {
+    id: "sofon",
+    title: "Sofon",
+    period: {
+      start: "01.2025",
+    },
+    link: "https://sofon.live",
+    github: "https://github.com/Alkush-Pipania/sofon",
+    skills: ["Golang", "Next.js", "Redis", "System Architecture"],
+    description: `Self-hosted uptime monitoring you deploy on your own infrastructure — no SaaS fees, no data leaving your network.
+
+**Features:**
+
+- Engineered a zero-dependency, self-hosted uptime monitoring engine by embedding a Next.js SPA into a highly concurrent Golang backend
+- Architected a scalable HTTP executor using Go worker pools and Redis to process custom health assertions (status codes, latency SLAs) across thousands of concurrent checks
+- Developed a robust Result Processor that categorizes network errors, manages retry queues via Redis, and triggers real-time alerts without false positives`,
+    isPinned: true,
+    media: {
+      type: "image",
+      url: "/Images/sofon.png",
+      alt: "Sofon - Self-hosted uptime monitoring",
+    },
+  },
+  {
     id: "carter",
     title: "Carter",
     period: {

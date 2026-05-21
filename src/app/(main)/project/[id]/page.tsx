@@ -68,7 +68,7 @@ export default async function ProjectDetailPage({ params }: Props) {
     const isSinglePeriod = end === start;
 
     return (
-        <div className="mx-auto md:max-w-3xl *:[[id]]:scroll-mt-22">
+        <div className="mx-auto md:max-w-5xl *:[[id]]:scroll-mt-22">
             <Separator />
 
             {/* Header with back button and title */}

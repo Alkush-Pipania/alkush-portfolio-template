@@ -2,6 +2,40 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
+    id: "twospoon",
+    companyName: "TwoSpoon",
+    positions: [
+      {
+        id: "twospoon-sde-intern-2026",
+        title: "Software Development Intern",
+        employmentPeriod: {
+          start: "03.2026",
+        },
+        employmentType: "Internship",
+        icon: "code",
+        description: `- Architected an autonomous invoice generation platform triggering on the 2nd of every month, processing billing data from CloudWatch logs by querying S3 via Athena — eliminating all manual invoicing overhead.
+- Integrated Zomato Espresso for PDF generation and resolved a singleton lock contention issue with Chromium via a sidecar container pattern, eliminating generation failures under concurrent load.
+- Integrated Zoho Books and engineered its webhook pipeline for real-time sync of invoice status, payment events, and financial records with the billing system.
+- Designed the DynamoDB schema with optimized PK/SK patterns for efficient single-table access, minimizing read/write costs; configured PM2 and led the project end-to-end.
+- Authored Golang unit and integration test cases for critical billing workflows, ensuring reliability and correctness across the invoice generation pipeline.`,
+        skills: [
+          "Golang",
+          "AWS",
+          "DynamoDB",
+          "Athena",
+          "S3",
+          "CloudWatch",
+          "Zoho Books",
+          "PM2",
+          "Webhooks",
+          "Testing",
+        ],
+        isExpanded: true,
+      },
+    ],
+    isCurrentEmployer: true,
+  },
+  {
     id: "techywebsolution",
     companyName: "Techy Web Solution Inc",
     companyLogo: "https://www.webability.io/logo.png",
@@ -33,10 +67,8 @@ export const EXPERIENCES: Experience[] = [
           "Python",
           "LLMs",
         ],
-        isExpanded: true,
       },
     ],
-    isCurrentEmployer: true,
   },
   {
     id: "makunaiglobal",
