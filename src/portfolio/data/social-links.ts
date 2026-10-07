@@ -1,24 +1,24 @@
 export const SOCIAL_LINKS = [
   {
-    icon: "https://stealth.blr1.digitaloceanspaces.com/assest/socials/x",
+    icon: "/socials/x.svg",
     title: "X (formerly Twitter)",
     description: "@alkushx",
     href: "https://x.com/alkushx",
   },
   {
-    icon: "https://stealth.blr1.digitaloceanspaces.com/assest/socials/github",
+    icon: "/socials/github.svg",
     title: "GitHub",
     description: "Alkush-Pipania",
     href: "https://github.com/Alkush-Pipania",
   },
   {
-    icon: "https://stealth.blr1.digitaloceanspaces.com/assest/socials/linkedin",
+    icon: "/socials/linkedin.svg",
     title: "LinkedIn",
     description: "alkushpipania",
     href: "https://linkedin.com/in/alkushpipania",
   },
   {
-    icon: "https://stealth.blr1.digitaloceanspaces.com/assest/socials/leetcode",
+    icon: "/socials/leetcode.svg",
     title: "LeetCode",
     description: "@building_agents",
     href: "https://leetcode.com/u/building_agents/",

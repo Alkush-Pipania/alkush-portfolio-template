@@ -40,7 +40,7 @@ export const USER = {
 - Previously **Full Stack Developer** at Techy Web Solutions — shipped [Webability](https://www.webability.io/), [Abilyo](https://abilyo.com), and production accessibility tooling used at scale.
 - Pursuing **B.Tech in Computer Science** at Dr. A.P.J. Abdul Kalam Technical University.
 `,
-  avatar: "https://stealth.blr1.digitaloceanspaces.com/assest/ChatGPT%20Image%20Dec%2023,%202025,%2010_45_13%20PM.png",
+  avatar: "/Images/avatar.jpg",
   ogImage: "/Images/og.png",
   namePronunciationUrl: "/audio/name.mp3",
   timeZone: "Asia/Kolkata",
