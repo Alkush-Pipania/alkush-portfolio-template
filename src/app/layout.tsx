@@ -79,18 +79,6 @@ export const metadata: Metadata = {
     creator: "@alkushx", // Twitter username
     images: [SITE_INFO.ogImage],
   },
-  icons: {
-    icon: [
-      {
-        url: "https://stealth.blr1.digitaloceanspaces.com/assest/Frame%201.ico",
-        sizes: "any",
-      },
-      {
-        url: "https://stealth.blr1.digitaloceanspaces.com/assest/Frame%201.ico",
-        type: "image/svg+xml",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({

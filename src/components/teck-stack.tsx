@@ -43,7 +43,7 @@ export function TeckStack() {
                       }
                     >
                       <Image
-                        src={`https://stealth.blr1.digitaloceanspaces.com/assest/stack/${tech.key}`}
+                        src={`/tech-stack-icons/${tech.key}.svg`}
                         alt={`${tech.title} icon`}
                         width={32}
                         height={32}
